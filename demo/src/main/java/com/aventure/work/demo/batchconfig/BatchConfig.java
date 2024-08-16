@@ -60,7 +60,7 @@ public class BatchConfig {
     public FlatFileItemWriter<Customer> flatFileItemWriter(){
         FlatFileItemWriter<Customer> flatFileItemWriter = new FlatFileItemWriter<>();
 
-        flatFileItemWriter.setResource(new FileSystemResource("C:\\Users\\a237938\\Documents\\Integration work\\migration\\MigrationCSVResults\\Sale.Customer.csv"));
+        flatFileItemWriter.setResource(new FileSystemResource("C:\\Users\\\\Documents\\Integration work\\migration\\MigrationCSVResults\\Sale.Customer.csv"));
         flatFileItemWriter.setLineAggregator(new DelimitedLineAggregator<Customer>(){{
             setDelimiter(",");
             setFieldExtractor(new BeanWrapperFieldExtractor<Customer>(){{
